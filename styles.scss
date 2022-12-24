@@ -1,0 +1,126 @@
+
+html{
+    font-size: 21px;
+}
+body {
+    background-color: rgba(10, 21, 58, 0.5);
+    
+    padding: 0;
+    //display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+button {
+    background-color: rgb(10, 21, 58);
+    border: none;
+}
+button:active {
+    box-shadow: 0.15rem 0.15rem;
+}
+.container {
+    background-color: rgb(10, 21, 58);
+    color: white;
+    display: grid;
+ //   gap: .5rem;
+    grid-template-rows: auto;
+    row-gap: 20px;
+}
+.title_container {
+    padding: .5rem 1rem 0rem 1rem;
+    display: flex;
+    font-size: xx-large;
+    justify-content: space-between;
+    .title {
+        justify-content: start;
+    }
+    span {
+        color: rgb(71, 211, 113)
+    }
+}
+.menu {
+
+    hr {
+        width: 30px;
+        margin: .5rem;
+    }
+}
+.menu:hover{
+    font-weight: bolder;
+    background-color: rgb(20, 212, 139);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.sections_container {
+    padding-left: 2%;
+}
+.sections{
+    text-align: center;
+    padding: 2%;
+    border-radius: 5%/50%;
+    text-transform: uppercase;
+    width: 90vw;
+    margin: 2%;
+    color: white;
+    background-color: rgb(10, 21, 58);
+}
+.sections:hover {
+    font-weight: bolder;
+    background-color: rgb(20, 212, 139);
+    cursor: pointer;
+    font-size: 1rem;
+}
+@media screen and (min-width: 700px)  {
+
+    body {
+        background-color: cyan;
+
+    }
+    .title_container {
+        justify-content: center;
+    }
+    .menu 
+    { content-visibility: hidden;
+        
+        }
+    .sections_container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+    }
+    .sections{
+        max-width: max-content;
+        padding: 0px 2rem;
+    }
+}
+@media screen and (min-width: 1024px ) {
+    body {
+        background-color: red;
+
+    }
+    .container {
+        min-width: fit-content;
+        max-width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .title_container {
+        justify-content: flex-start;
+    }
+    .menu 
+    { content-visibility: hidden;
+        
+        }
+    .sections_container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        // justify-content: space-between;
+    }
+    .sections{
+        min-width: min-content;
+        
+    }
+    .sections:hover {
+        width: calc(1fr - 1rem);
+        margin: 1rem 0rem;
+}
+}
