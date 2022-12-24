@@ -100,6 +100,7 @@ button:active {
     background-color: red;
   }
   .container {
+    height: 10vh;
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -109,6 +110,9 @@ button:active {
   }
   .title_container {
     justify-content: flex-start;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
   .menu {
     content-visibility: hidden;
@@ -123,7 +127,7 @@ button:active {
     min-width: min-content;
   }
   .sections:hover {
-    width: calc(1fr - 1rem);
+    width: 1fr;
     margin: 1rem 0rem;
   }
 }
